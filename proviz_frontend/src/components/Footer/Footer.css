@@ -1,0 +1,26 @@
+/* Footer Rights */
+.footer-rights {
+  margin-top: 3rem;  /* Reduced space between columns and footer rights */
+  color: #777;
+  font-size: 0.85rem;
+  text-align: center;
+  border-top: 1px solid #ffdc5c;
+  padding-top: 1.5rem;  /* Added padding to create a distinct separation from the columns */
+}
+
+/* Three Column Layout */
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 2rem;  /* Space between heading and columns */
+  padding-bottom: 2rem; /* Space between columns and footer rights */
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 0 1rem;
+}

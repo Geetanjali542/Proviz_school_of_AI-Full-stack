@@ -1,0 +1,85 @@
+/* Header styling for desktop view */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111;
+  color: #f0f0f0;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffdd57;
+  margin: 0;
+}
+
+/* Navigation Links for Desktop */
+.nav-links {
+  display: flex;
+  /* gap: 1.5rem; */
+}
+
+.nav-links a {
+  color: #ffdd57;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #111;
+  background-color: #ffdd57;
+}
+
+/* Hamburger menu for Mobile and Tablet */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile and Tablet Styles */
+@media (max-width: 768px) {
+  /* Hide the nav-links by default on mobile */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    background-color: #111;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  /* Display nav-links when the menu is open */
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  /* Show the hamburger icon on mobile */
+  .hamburger {
+    display: flex;
+  }
+}

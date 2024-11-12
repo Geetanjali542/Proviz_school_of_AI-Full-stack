@@ -1,0 +1,76 @@
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.application-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.application-form h2 {
+  font-size: 1.8rem;
+  color: #ffdc5c;
+  margin-bottom: 1rem;
+}
+
+.application-form label {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 0.8rem;
+}
+
+.application-form input,
+.application-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.application-form button[type="submit"] {
+  background-color: #ffdc5c;
+  color: #000;
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.application-form button[type="submit"]:hover {
+  background-color: #ffc300;
+}
+
+.application-form button[type="button"] {
+  background-color: #ccc;
+  color: #000;
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.application-form button[type="button"]:hover {
+  background-color: #bbb;
+}
